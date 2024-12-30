@@ -1,7 +1,11 @@
-import { Hero } from "@/components/hero"
-import { SidebarNav } from "@/components/sidebar-nav"
-import { BlogCard } from "@/components/blog-card"
-import { ProjectCard } from "@/components/project-card"
+import { Hero } from "@/components/hero";
+import { BlogCard } from "@/components/blog-card";
+import { ProjectCard } from "@/components/project-card";
+import * as dotenv from 'dotenv';
+import { getrepos } from "@/server/github";
+import { Container } from "@/components/ui/container";
+import { Project } from "./constant";
+dotenv.config({ path: '.env.local' });
 
 const blogs = [
   {
@@ -9,82 +13,55 @@ const blogs = [
     likes: 0
   },
   {
-    title: "Creating a full-stack AI based calorie/nutrition tracker in just 8 hrs using Supabase & Lovable",
+    title: "Creating a full-stack AI-based calorie/nutrition tracker in just 8 hrs using Supabase & Lovable",
     likes: 20
   },
   {
     title: "Creating a Pokémon guessing game using Supabase, Drizzle, and Next.js in just 2 hours!",
     likes: 77
   }
-]
+];
 
-const projects = [
-  {
-    title: "asrvd.me",
-    description: "personal site made using the t3 stack",
-    stars: 150,
-    forks: 9
-  },
-  {
-    title: "favmoji",
-    description: "use emojis (twemoji) as favicon in your project using link tags",
-    stars: 16,
-    forks: 2
-  },
-  {
-    title: "ohmypoll",
-    description: "nextjs app to create and share polls",
-    stars: 16,
-    forks: 4
-  },
-  {
-    title: "ponsor",
-    description: "getting sponsored made easy with widgets !",
-    stars: 0,
-    forks: 0
-  },
-  {
-    title: "onigiri",
-    description: "a very dark, minimal, powerful and fully customizable",
-    stars: 0,
-    forks: 0
-  },
-  {
-    title: "flow",
-    description: "a minimal ocean themed startpage (WIP)",
-    stars: 0,
-    forks: 0
-  }
-]
+// Define the type of project data for TypeScript
 
-export default function Home() {
+
+// Server-side data fetching
+
+
+
+const Home = async () => {
+  const projects: Project[] = await getrepos().then((data) => data.props.projects);
   return (
     <div className="min-h-screen bg-background">
-      <SidebarNav />
-      <main className="pl-16">
-        <Hero />
-        
-        <div className="max-w-5xl mx-auto py-20 space-y-20">
-          <section>
-            <h2 className="text-3xl font-bold mb-8">Recent Blogs</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {blogs.map((blog, index) => (
-                <BlogCard key={index} {...blog} />
-              ))}
-            </div>
-          </section>
+    
+    <main className="md:pl-16">
+       
+      <Hero />
+      
+      <Container className="py-20 space-y-20">
+        <section>
+          <h2 className="text-3xl font-bold mb-8">Recent Blogs</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {blogs.map((blog, index) => (
+              <BlogCard key={index} {...blog} />
+            ))}
+          </div>
+        </section>
 
-          <section>
-            <h2 className="text-3xl font-bold mb-8">Top Projects</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {projects.map((project, index) => (
-                <ProjectCard key={index} {...project} />
-              ))}
-            </div>
-          </section>
-        </div>
-      </main>
-    </div>
-  )
-}
+        <section>
+          <h2 className="text-3xl font-bold mb-8">Latest Projects</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {
+              projects.length > 0 && projects.map((project, index) => (
+                <ProjectCard topics={project.topics} key={index} description={project.description} url={project.url} name={project.name} home={project.home} language={project.language} license={project.license} />
+              ))
+            }
+          </div>
+        </section>
+      </Container>
+    </main>
+  </div>
+  );
+};
 
+export default Home;

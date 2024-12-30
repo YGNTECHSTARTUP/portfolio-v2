@@ -16,7 +16,7 @@ export function AudioQualityCard() {
         damping: 20
       }}
     >
-      <Card className="p-6 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent border-primary/20">
+      <Card className="p-6 bg-gradient-to-br   from-primary/10 via-primary/5 to-transparent border-primary/20">
         <div className="space-y-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
