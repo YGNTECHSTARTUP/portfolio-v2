@@ -20,8 +20,8 @@ export function ProjectCard({
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      whileHover={{ scale: 1.01 }}
-      className="bg-card  cursor-pointer border-2 border-primary text-card-foreground rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 ease-in-out"
+     
+      className="bg-card  cursor-pointer hover:bg-gradient-to-br hover:from-primary/20 hover:via-primary/5 hover:to-transparent bg-gradient-to-br  from-primary/10 via-primary/5 to-transparent border-primary/20 border-2 text-card-foreground rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 ease-in-out"
     >
       <div className="p-6">
         <motion.h3
@@ -48,9 +48,9 @@ export function ProjectCard({
         >
           {
             topics.length >= 1 ? topics.map((topic, index) => (
-              <Badge key={index} className='bg-gray-600 dark:bg-slate-300 dark:text-black text-white'>{topic}</Badge>
+              <Badge key={index} className='bg-gradient-to-br   from-primary/40 via-primary/15 to-transparent border-primary/60'>{topic}</Badge>
             ))
-           :  <Badge  className='bg-gray-600 dark:bg-slate-300 dark:text-black text-white'>{language}
+           :  <Badge className='bg-gradient-to-br   from-primary/40 via-primary/15 to-transparent border-primary/60'>{language}
             </Badge>
 }
         

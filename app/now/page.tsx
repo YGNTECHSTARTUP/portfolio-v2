@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion"
 import { SidebarNav } from "@/components/sidebar-nav"
-import { BackgroundBeams } from "@/components/ui/background-beams"
 import { NowContent } from "@/components/now-content"
 import { Clock } from 'lucide-react'
 
@@ -53,7 +52,6 @@ export default function NowPage() {
               <NowContent />
             </div>
           </div>
-          <BackgroundBeams />
         </div>
       </motion.main>
     </div>

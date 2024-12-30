@@ -1,7 +1,6 @@
 "use client"
 
 import { motion } from "framer-motion"
-import Link from "next/link"
 import { Card } from "@/components/ui/card"
 import { LastUpdated } from "@/components/last-updated"
 
@@ -32,36 +31,32 @@ export function NowContent() {
         <Card className="p-6">
           <div className="prose prose-gray dark:prose-invert max-w-none">
             <p>
-              <em>Sigh</em>, the year is about to end in like 3 days, feels like I was writing the last content for my{" "}
-              <code className="text-primary">now</code> page the last week only. 2022 has been a{" "}
-              <span className="font-medium">not-so-good-but-not-so-bad</span> year for me. There were things I 
-              couldn't accomplish but there were also a large number of things I did accomplish. In fact I was able 
-              to check out most of the stuff from my 2022 checklist and that's a huge accomplishment according to me.
+              Sigh. Another year is coming to an end—just two more days left. 😔 It feels like I was writing my last "Now" page only yesterday. 2024 has been an incredibly intense year for me—a year of drastic change, loss, and transformation. 💔✨
             </p>
-
             <p>
-              I did make a lot of memories worth remembering this year, made new friends, lost some friends but in 
-              the end none of it really matters except the fact that I survived yet another year. So, in case you want 
-              to know what I have been doing, I have been wasting a good amount of time playing Valorant and apart 
-              from that I tried exploring{" "}
-              <Link href="https://kit.svelte.dev" className="text-primary hover:underline">
-                Svelte Kit
-              </Link>
-              . I haven't been coding consistently tbh but I did try Advent of Code and sadly I lost on day 14 :(
+              From December 2023 to December 2024, I went through moments that reshaped my life in ways I never anticipated. I lost many things—both personally and professionally. I lost people who were close to me, and in the process, I changed—everything about me did. The way I look, the way I think, the way I approach life—none of it is the same anymore. 🔄
             </p>
-
             <p>
-              These last 3 days of 2022, I'm going to spend most of it doing productive things <em>hopefully</em> and spend 
-              some time with family since college is closed for holidays. This is it for this time ig, see ya next year -- 
-              and wishing you a very happy new year in advance in case you read it before it and a very happy belated new 
-              year in case you read it after it. Bye.
+              This year will forever remain unforgettable for me, not because of accomplishments, but because of the sheer intensity it brought into my life. ⚡ There were things I couldn't achieve and plans that didn't work out as I had hoped. And if I'm being honest, I spent a lot of my time overthinking 🤯, daydreaming about the future ☁️, and researching things that, looking back, didn't really matter much to me.
+            </p>
+            <p>
+              I also wasn't coding as consistently as I wanted to. 💻 You can even see that reflected in my GitHub contributions this year—it's a reminder of the highs and lows I've been through. 📉📈
+            </p>
+            <p>
+              As 2024 comes to a close, I'm hoping to spend this final week being as productive as possible 🛠️ and making time for the people who matter—especially my family. ❤️
+            </p>
+            <p>
+              That's it from me for now. I'll see you in the new year! 🌟 Wishing you a very Happy New Year in advance if you're reading this before it, and a belated Happy New Year if you're reading it after. 🎉🥳
+            </p>
+            <p>
+              Take care, and goodbye for now. 👋
             </p>
           </div>
         </Card>
       </motion.div>
 
       <motion.div variants={item}>
-        <LastUpdated date="28 December, 2022" />
+        <LastUpdated date="29 December, 2024" />
       </motion.div>
     </motion.div>
   )

@@ -1,15 +1,14 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { BackgroundBeams } from "@/components/ui/background-beams"
 import { Container } from "@/components/ui/container"
 import Image from "next/image"
 
 export function Hero() {
   return (
-    <div className="relative">
+    <div className="relative bg-transparent bg-gradient-to-tr from-primary/0 via-primary/5 to-primary/10 ">
       <Container>
-        <div className="flex flex-col md:flex-row items-center justify-between py-20 gap-10">
+        <div className="flex flex-col md:flex-row items-center justify-between py-20 gap-10 ">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -44,7 +43,6 @@ export function Hero() {
           </motion.div>
         </div>
       </Container>
-      <BackgroundBeams />
     </div>
   )
 }

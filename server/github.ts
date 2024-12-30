@@ -15,8 +15,12 @@ export const getrepos = async () => {
         },
       };
     }
-  
     const repositories = await response.json();
+    repositories.sort((a: { created_at: string }, b: { created_at: string }) => {
+      return new Date(b.created_at).getTime() - new Date(a.created_at).getTime();
+    });
+
+   
     const projectData = repositories.map((repo: { name: string; description: string; html_url:string,homepage:string,language:string,topics:string[]}) => ({
       name: repo.name,
       description: repo.description,
@@ -25,7 +29,6 @@ export const getrepos = async () => {
       language:repo.language,
       topics:repo.topics,
     }));
-    console.log(projectData)
     return {
       props: {
         projects: projectData.slice(0, 6),
