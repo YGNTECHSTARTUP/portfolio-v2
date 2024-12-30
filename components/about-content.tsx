@@ -5,6 +5,7 @@ import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { SnailIcon as Crab, Gamepad2, Tv, Leaf, BrainCircuit } from 'lucide-react'
 import { CodeBlock } from "./ui/code-block"
+import Link from "next/link"
 const container = {
   hidden: { opacity: 0 },
   show: {
@@ -28,7 +29,7 @@ export function AboutContent() {
       animate="show"
       className="space-y-8"
     >
-      <motion.div variants={item} className="space-y-2">
+      <motion.div variants={item} className="space-y-2 container mx-auto">
         <h1 className="text-4xl font-bold tracking-tight">Hello, World! 🌍🦀</h1>
         <p className="text-xl text-muted-foreground">
           I&apos;m <span className="font-semibold">Gagan</span>, but you can call me <span className="font-semibold">YGN</span> on the web.
@@ -53,7 +54,11 @@ export function AboutContent() {
             <p>
               Then, I took a creative detour into <span className="font-medium">game development</span>—or, more accurately,
               <span className="font-medium"> game design</span>—because I actually designed a game using the
-              <span className="font-medium"> CORE game engine</span>! You can even check out a video of it on YouTube. 🎮✨
+              <span className="font-medium"> CORE game engine</span>! You can even check out a <Link href={"https://youtu.be/Sh2UfNZtg78"} target="_blank">
+              <span className="underline decoration-2 decoration-wavy ">
+              video
+                </span>
+              </Link> of it on YouTube. 🎮✨
             </p>
             <p>
               After that, I ventured into the vast world of <span className="font-medium">web development</span>, diving into all things frontend, backend, and beyond.
@@ -97,7 +102,10 @@ export function AboutContent() {
         <Card className="p-6">
           <h2 className="text-2xl font-semibold mb-4">Full-Stack Adventures</h2>
           <p className="text-muted-foreground">
-            I&apos;ve built my own <span className="font-medium">Full-Stack Tech Stack</span>, crafted with love and lots of sleepless nights.
+            I&apos;ve built my own <Link href={"https://ygntech.vercel.app/MyTechStack" 
+            } target="_blank">
+            <span className="font-medium underline decoration-2 decoration-wavy ">YGN Tech Stack</span>
+            </Link> , crafted with love and lots of sleepless nights.
             It&apos;s a mix of everything I&apos;ve learned so far, so go ahead and check it out—it&apos;s my magnum opus (for now).
           </p>
         </Card>
@@ -107,7 +115,7 @@ export function AboutContent() {
         <Card className="p-6">
           <h2 className="text-2xl font-semibold mb-4">Writing? Soon™</h2>
           <p className="text-muted-foreground">
-            When I&apos;m not coding or geeking out over Rustacean quirks, I&apos;m exploring the world of
+            When I&apos;m not coding or geeking out over Rustacean quirks, I&apos;m trying to explore the world of
             <span className="font-medium"> technical writing and blogging</span>. I&apos;m still getting my feet wet there,
             but hey, maybe one day I&apos;ll blow your mind with my posts. Stay tuned for that!
           </p>
@@ -121,7 +129,11 @@ export function AboutContent() {
           <ul className="space-y-2 text-muted-foreground">
             <li className="flex items-center gap-2">
               <Gamepad2 className="h-5 w-5 text-primary" />
-              <span><strong>Gaming</strong>: Right now, I&apos;m all about <em>Genshin Impact</em> (aka Primogem Poverty Simulator). 🎮</span>
+              <span><strong>Gaming</strong>: Right now, I&apos;m all about <Link href={"https://genshin.hoyoverse.com/en/" 
+            } target="_blank">
+<span className="font-medium underline decoration-2 decoration-wavy "><em>Genshin Impact </em> </span> 
+            </Link>
+             (aka Primogem Poverty Simulator). 🎮</span>
             </li>
             <li className="flex items-center gap-2">
               <Tv className="h-5 w-5 text-primary" />
@@ -129,7 +141,9 @@ export function AboutContent() {
             </li>
             <li className="flex items-center gap-2">
               <Leaf className="h-5 w-5 text-primary" />
-              <span><strong>Nature Escapades</strong>: I often retreat to the terrace with some soft music, lost in thoughts about Future and the mysteries of life. 🌿</span>
+              <span><strong>Nature Escapades</strong>: I often retreat to the terrace with some soft <Link href={"/music"}>
+              <span className="font-medium underline decoration-2 decoration-wavy">music</span>
+              </Link>, lost in thoughts about Future and the mysteries of life. 🌿</span>
             </li>
             <li className="flex items-center gap-2">
               <BrainCircuit className="h-5 w-5 text-primary" />

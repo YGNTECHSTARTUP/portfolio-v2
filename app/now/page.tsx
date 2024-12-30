@@ -1,7 +1,6 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { SidebarNav } from "@/components/sidebar-nav"
 import { NowContent } from "@/components/now-content"
 import { Clock } from 'lucide-react'
 
@@ -14,9 +13,8 @@ const pageVariants = {
 export default function NowPage() {
   return (
     <div className="min-h-screen bg-background">
-      <SidebarNav />
       <motion.main
-        className="pl-16"
+        className=""
         initial="initial"
         animate="animate"
         exit="exit"
@@ -32,7 +30,7 @@ export default function NowPage() {
                 transition={{ delay: 0.2, duration: 0.5 }}
                 className="space-y-2"
               >
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-3 container">
                   <motion.div
                     animate={{ rotate: 360 }}
                     transition={{ 
@@ -43,7 +41,7 @@ export default function NowPage() {
                   >
                     <Clock className="h-8 w-8 text-primary" />
                   </motion.div>
-                  <h1 className="text-4xl font-bold tracking-tight">Now</h1>
+                  <h1 className="text-4xl font-bold tracking-tight ">Now</h1>
                 </div>
                 <p className="text-lg text-muted-foreground">
                   The answer to &quot;What are you upto these days?&quot;

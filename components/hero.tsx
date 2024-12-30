@@ -37,7 +37,7 @@ export function Hero() {
                 alt="Profile"
                 width={192}
                 height={192}
-                className="object-cover"
+                className="object-cover dark:grayscale dark:hover:grayscale-0"
               />
             </div>
           </motion.div>
