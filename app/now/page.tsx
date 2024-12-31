@@ -14,7 +14,7 @@ export default function NowPage() {
   return (
     <div className="min-h-screen bg-background">
       <motion.main
-        className=""
+        className="p-3"
         initial="initial"
         animate="animate"
         exit="exit"

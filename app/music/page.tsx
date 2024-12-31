@@ -1,8 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { SidebarNav } from "@/components/sidebar-nav"
-import { BackgroundBeams } from "@/components/ui/background-beams"
+
 import { MusicContent } from "@/components/music-content"
 
 const pageVariants = {
@@ -14,9 +13,8 @@ const pageVariants = {
 export default function MusicPage() {
   return (
     <div className="min-h-screen bg-background">
-      <SidebarNav />
       <motion.main
-        className="pl-16"
+        className="p-3"
         initial="initial"
         animate="animate"
         exit="exit"
@@ -39,7 +37,6 @@ export default function MusicPage() {
               <MusicContent />
             </div>
           </div>
-          <BackgroundBeams />
         </div>
       </motion.main>
     </div>

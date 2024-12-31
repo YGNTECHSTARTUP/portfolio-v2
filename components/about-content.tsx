@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { SnailIcon as Crab, Gamepad2, Tv, Leaf, BrainCircuit } from 'lucide-react'
+import {  Gamepad2, Tv, Leaf, BrainCircuit } from 'lucide-react'
 import { CodeBlock } from "./ui/code-block"
 import Link from "next/link"
 const container = {
@@ -55,7 +55,7 @@ export function AboutContent() {
               Then, I took a creative detour into <span className="font-medium">game development</span>—or, more accurately,
               <span className="font-medium"> game design</span>—because I actually designed a game using the
               <span className="font-medium"> CORE game engine</span>! You can even check out a <Link href={"https://youtu.be/Sh2UfNZtg78"} target="_blank">
-              <span className="underline decoration-2 decoration-wavy ">
+              <span className="underline hover:transition-all hover:ease-in-out hover:no-underline hover:text-yellow-700 dark:hover:text-yellow-500    decoration-yellow-600 decoration-2 decoration-none ">
               video
                 </span>
               </Link> of it on YouTube. 🎮✨
@@ -104,7 +104,7 @@ export function AboutContent() {
           <p className="text-muted-foreground">
             I&apos;ve built my own <Link href={"https://ygntech.vercel.app/MyTechStack" 
             } target="_blank">
-            <span className="font-medium underline decoration-2 decoration-wavy ">YGN Tech Stack</span>
+            <span className="font-medium underline hover:transition-all hover:ease-in-out hover:no-underline decoration-yellow-600 hover:text-yellow-700 dark:hover:text-yellow-500    decoration-2 decoration-none ">YGN Tech Stack</span>
             </Link> , crafted with love and lots of sleepless nights.
             It&apos;s a mix of everything I&apos;ve learned so far, so go ahead and check it out—it&apos;s my magnum opus (for now).
           </p>
@@ -131,7 +131,7 @@ export function AboutContent() {
               <Gamepad2 className="h-5 w-5 text-primary" />
               <span><strong>Gaming</strong>: Right now, I&apos;m all about <Link href={"https://genshin.hoyoverse.com/en/" 
             } target="_blank">
-<span className="font-medium underline decoration-2 decoration-wavy "><em>Genshin Impact </em> </span> 
+<span className="font-medium underline hover:transition-all hover:ease-in-out hover:no-underline decoration-yellow-600 hover:text-yellow-700 dark:hover:text-yellow-500   decoration-2 decoration-none "><em>Genshin Impact </em> </span> 
             </Link>
              (aka Primogem Poverty Simulator). 🎮</span>
             </li>
@@ -142,7 +142,7 @@ export function AboutContent() {
             <li className="flex items-center gap-2">
               <Leaf className="h-5 w-5 text-primary" />
               <span><strong>Nature Escapades</strong>: I often retreat to the terrace with some soft <Link href={"/music"}>
-              <span className="font-medium underline decoration-2 decoration-wavy">music</span>
+              <span className="font-medium underline decoration-yellow-600 decoration-2 decoration-none hover:transition-all hover:ease-in-out hover:no-underline hover:text-yellow-700 dark:hover:text-yellow-500   ">music</span>
               </Link>, lost in thoughts about Future and the mysteries of life. 🌿</span>
             </li>
             <li className="flex items-center gap-2">
@@ -191,14 +191,15 @@ impl Gagan {
       <motion.div variants={item}>
         <Card className="p-6">
           <p className="text-muted-foreground">
-            That&apos;s all about me! If you know something about me that I don&apos;t, feel free to <code>hit_me_up();</code>.
+            That&apos;s all about me! If you know something about me that I don&apos;t, feel free to <span className="text-yellow-700 text-primary bg-transparent bg-gradient-to-tr from-primary-foreground/80  ">
+            hit_me_up();   </span>.
             Until then, let&apos;s keep our code clean, our dreams big 🚀
           </p>
           <p className="mt-4 font-semibold">
             Cheers and happy hacking,
           </p>
           <p className="font-bold text-lg">
-            Gagan <Crab className="inline h-5 w-5 text-primary" />
+            Gagan 🦀
           </p>
         </Card>
       </motion.div>

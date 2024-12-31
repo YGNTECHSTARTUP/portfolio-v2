@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Card } from "@/components/ui/card"
-import { Music2, Disc3, Languages, Headphones, FileAudio } from 'lucide-react'
+import { Music2, Disc3, Languages,  } from 'lucide-react'
 import { AudioQualityCard } from "@/components/audio-quality-card"
 import { ArtistImage } from "@/components/artist-image"
 
@@ -22,36 +22,31 @@ const item = {
 }
 
 const genres = [
-  "Alternative Rock",
-  "Progressive Metal",
-  "Jazz Fusion",
-  "Classical",
-  "Electronic",
-  "Ambient",
-  "Post-Rock",
-  "Math Rock"
+"Lofi",
+"Ambient",
+"Acoustic",
+"Phonk"
 ]
 
 const languages = [
-  "English",
-  "Japanese",
-  "Hindi",
-  "Korean",
-  "French",
-  "Italian"
+ "Telugu",
+ "Tamil",
+ "Hindi",
+ "English",
+ "Japanese",
 ]
 
 const artists = [
-  { name: "Pink Floyd", imageUrl: "/placeholder.svg?height=200&width=200" },
-  { name: "Tool", imageUrl: "/placeholder.svg?height=200&width=200" },
-  { name: "Radiohead", imageUrl: "/placeholder.svg?height=200&width=200" },
-  { name: "King Crimson", imageUrl: "/placeholder.svg?height=200&width=200" },
-  { name: "Porcupine Tree", imageUrl: "/placeholder.svg?height=200&width=200" },
-  { name: "Steven Wilson", imageUrl: "/placeholder.svg?height=200&width=200" },
-  { name: "Opeth", imageUrl: "/placeholder.svg?height=200&width=200" },
-  { name: "Dream Theater", imageUrl: "/placeholder.svg?height=200&width=200" },
-  { name: "Yes", imageUrl: "/placeholder.svg?height=200&width=200" },
-  { name: "Rush", imageUrl: "/placeholder.svg?height=200&width=200" }
+  { name: "AnuvJain", imageUrl: "/anuv.png" },
+  { name: "Iqlipse Nova", imageUrl: "/nova.png" },
+  { name: "Ed Shareen", imageUrl: "/ed.png" },
+  { name: "XXX Tentacion", imageUrl: "/xxx.png" },
+  { name: "Sid Sriram", imageUrl: "/sid.png" },
+  { name: "Arjith Singh", imageUrl: "/arj.png" },
+  { name: "A.R Rahman", imageUrl: "/ar.png" },
+  { name: "Anirudh Ravichander", imageUrl: "/rudh.png" },
+  { name: "S.P BalaSubrahmanyam", imageUrl: "/sp.png" },
+  { name: "Raj Prakash Paul", imageUrl: "/raj.png" }
 ]
 
 export function MusicContent() {

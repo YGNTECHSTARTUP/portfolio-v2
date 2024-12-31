@@ -1,5 +1,4 @@
 import { Hero } from "@/components/hero";
-import { BlogCard } from "@/components/blog-card";
 import { ProjectCard } from "@/components/project-card";
 import * as dotenv from 'dotenv';
 import { getrepos } from "@/server/github";
@@ -7,20 +6,7 @@ import { Container } from "@/components/ui/container";
 import { Project } from "./constant";
 dotenv.config({ path: '.env.local' });
 
-const blogs = [
-  {
-    title: "[Boost]",
-    likes: 0
-  },
-  {
-    title: "Creating a full-stack AI-based calorie/nutrition tracker in just 8 hrs using Supabase & Lovable",
-    likes: 20
-  },
-  {
-    title: "Creating a Pokémon guessing game using Supabase, Drizzle, and Next.js in just 2 hours!",
-    likes: 77
-  }
-];
+
 
 // Define the type of project data for TypeScript
 
@@ -39,14 +25,14 @@ const Home = async () => {
       <Hero />
       
       <Container className="py-20 space-y-20">
-        <section>
+        {/* <section>
           <h2 className="text-3xl font-bold mb-8">Recent Blogs</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {blogs.map((blog, index) => (
               <BlogCard key={index} {...blog} />
             ))}
           </div>
-        </section>
+        </section> */}
 
         <section>
           <h2 className="text-3xl font-bold mb-8">Latest Projects</h2>

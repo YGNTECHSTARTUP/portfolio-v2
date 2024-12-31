@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
-import { Home, User, Clock, Code2, Layout, Headphones, Palette, Moon, Sun } from 'lucide-react'
+import { Home, User, Clock, Code2, Layout, Headphones, Moon, Sun } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 import { useTheme } from "next-themes"
@@ -15,7 +15,6 @@ export const navItems = [
   { icon: Code2, href: "/projects", label: "Projects" },
   { icon: Layout, href: "/dashboard", label: "Dashboard" },
   { icon: Headphones, href: "/music", label: "Music" },
-  { icon: Palette, href: "/blog", label: "Blog" },
 ]
 
 export function SidebarNav() {

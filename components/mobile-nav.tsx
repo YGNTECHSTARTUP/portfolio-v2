@@ -4,7 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { motion, AnimatePresence } from "framer-motion"
-import { Menu, X } from 'lucide-react'
+import { Menu, } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { navItems } from "@/components/sidebar-nav"
@@ -27,9 +27,7 @@ export function MobileNav() {
         <div className="flex flex-col h-full">
           <div className="flex justify-between items-center mb-4">
             <h2 className="text-lg font-semibold">Menu</h2>
-            <Button variant="ghost" size="icon" onClick={() => setOpen(false)}>
-              <X className="h-5 w-5" />
-            </Button>
+           
           </div>
           <nav className="flex-grow">
             <AnimatePresence>

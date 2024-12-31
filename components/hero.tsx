@@ -3,10 +3,16 @@
 import { motion } from "framer-motion"
 import { Container } from "@/components/ui/container"
 import Image from "next/image"
+import { Spotlight } from "./ui/spotlight"
 
 export function Hero() {
   return (
+    
     <div className="relative bg-transparent bg-gradient-to-tr from-primary/0 via-primary/5 to-primary/10 ">
+       <Spotlight
+        className="-top-40 right-0 absolute md:left-48 md:-top-20"
+        fill="orange"
+      />
       <Container>
         <div className="flex flex-col md:flex-row items-center justify-between py-20 gap-10 ">
           <motion.div
@@ -37,7 +43,7 @@ export function Hero() {
                 alt="Profile"
                 width={192}
                 height={192}
-                className="object-cover dark:grayscale dark:hover:grayscale-0"
+                className="object-cover lg:dark:grayscale lg:dark:hover:grayscale-0"
               />
             </div>
           </motion.div>

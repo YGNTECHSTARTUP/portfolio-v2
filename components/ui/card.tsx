@@ -1,12 +1,20 @@
 import * as React from "react"
 
 import { cn } from "@/lib/utils"
+import { AnimatedScrollWrapper } from "./Animated-scroll"
 
 const Card = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => (
-  <div
+ 
+    <AnimatedScrollWrapper
+  duration={0.7}
+  delay={0.2}
+  animation="scaleUp"
+  className="custom-class"
+>
+<div
     ref={ref}
     className={cn(
       "rounded-xl border bg-card text-card-foreground shadow",
@@ -14,6 +22,7 @@ const Card = React.forwardRef<
     )}
     {...props}
   />
+</AnimatedScrollWrapper>
 ))
 Card.displayName = "Card"
 
