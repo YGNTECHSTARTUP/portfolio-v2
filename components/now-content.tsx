@@ -29,7 +29,7 @@ export function NowContent() {
     >
       
     
-<h1 className="text-lg lg:text-4xl font-semibold">Personal</h1>
+<h1 className="text-2xl lg:text-4xl font-semibold">Personal</h1>
       <motion.div variants={item}>
         <Card className="p-6">
         <div className="prose prose-gray dark:prose-invert max-w-none">
@@ -75,7 +75,7 @@ export function NowContent() {
           <LastUpdated date="29 December, 2024" />
         </motion.div>
       </motion.div>
-      <h1 className="text-lg lg:text-4xl font-semibold">Academic</h1>
+      <h1 className="text-2xl lg:text-4xl font-semibold">Academic</h1>
       <motion.div variants={item}>
       <Card className="p-6">
   <div className="prose prose-gray dark:prose-invert max-w-none">

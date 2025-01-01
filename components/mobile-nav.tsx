@@ -4,11 +4,12 @@ import { useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { motion, AnimatePresence } from "framer-motion"
-import { Menu, } from 'lucide-react'
+
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { navItems } from "@/components/sidebar-nav"
 import { useTheme } from "next-themes"
+import { CircleArrowDown, Moon, Sun } from "lucide-react"
 
 export function MobileNav() {
   const [open, setOpen] = useState(false)
@@ -16,13 +17,27 @@ export function MobileNav() {
   const { theme, setTheme } = useTheme()
 
   return (
+    <div className="fixed top-0 left-0 right-0 h-16 bg-background/80 backdrop-blur-sm border-b z-50 flex items-center justify-between px-4 md:hidden">
+   <Link href="/" className="text-xl font-bold">
+          YGN
+        </Link>
+        <div className="flex items-center gap-2">
+        <div className="mt-auto">
+        <Button
+          variant="ghost"
+          size="icon"
+          className="w-full p-2"
+          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+        >
+          {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+        </Button>
+      </div>
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
-        <Button variant="ghost" size="icon" className="md:hidden">
-          <Menu className="h-5 w-5" />
-          <span className="sr-only">Toggle menu</span>
-        </Button>
+              <CircleArrowDown fill="black" size={25} className='mt-1  text-white   '/>
+
       </SheetTrigger>
+    
       <SheetContent side="bottom" className="h-[80vh]">
         <div className="flex flex-col h-full">
           <div className="flex justify-between items-center mb-4">
@@ -60,7 +75,7 @@ export function MobileNav() {
           </nav>
           <div className="mt-auto pt-4 border-t">
             <Button
-              variant="ghost"
+              variant="outline"
               className="w-full justify-center"
               onClick={() => {
                 setTheme(theme === "dark" ? "light" : "dark")
@@ -73,6 +88,8 @@ export function MobileNav() {
         </div>
       </SheetContent>
     </Sheet>
+    </div>
+    </div>
   )
 }
 

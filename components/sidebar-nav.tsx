@@ -22,7 +22,7 @@ export function SidebarNav() {
   const { theme, setTheme } = useTheme()
 
   return (
-    <nav className="fixed left-0 top-0 bottom-0 w-16 flex flex-col items-center py-8 bg-background border-r z-10 hidden md:flex">
+    <nav className="fixed left-0 top-0 bottom-0 w-16 flex-col items-center py-8 bg-background border-r z-10 hidden md:flex">
       <div className="space-y-4 w-full">
         {navItems.map((item, index) => {
           const Icon = item.icon

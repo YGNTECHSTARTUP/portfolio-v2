@@ -1,7 +1,6 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Container } from "@/components/ui/container"
 import Image from "next/image"
 import { Spotlight } from "./ui/spotlight"
 
@@ -13,7 +12,7 @@ export function Hero() {
         className="-top-40 right-0 absolute md:left-48 md:-top-20"
         fill="orange"
       />
-      <Container>
+      
         <div className="flex flex-col md:flex-row items-center justify-between py-20 gap-10 ">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -48,7 +47,6 @@ export function Hero() {
             </div>
           </motion.div>
         </div>
-      </Container>
     </div>
   )
 }

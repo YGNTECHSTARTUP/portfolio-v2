@@ -15,7 +15,7 @@ export default function MusicPage() {
   return (
     <div className="min-h-screen bg-background">
       <motion.main
-        className="p-3"
+        className="p-3  md:pl-16 lg:pl-0"
         initial="initial"
         animate="animate"
         exit="exit"
