@@ -10,39 +10,58 @@ interface Movie {
   title: string
   imageUrl: string
   status: "Watching" | "Watched"
-  rating: number
+  rating: number | null
 }
 
 const movies: Movie[] = [
+ 
   {
-    title: "BLEACH",
-    imageUrl: "/placeholder.svg?height=400&width=300",
+    title: "Solo Leveling Season 2",
+    imageUrl: "/solo.png",
     status: "Watching",
-    rating: 8
+    rating: null
   },
   {
-    title: "Lift",
-    imageUrl: "/placeholder.svg?height=400&width=300",
-    status: "Watched",
-    rating: 8
+    title: "Silicon Valley",
+    imageUrl: "/sil.png",
+    status: "Watching",
+    rating: null
   },
   {
-    title: "ஜெயிலர்",
-    imageUrl: "/placeholder.svg?height=400&width=300",
+    title: "Social Network",
+    imageUrl: "/social.png",
     status: "Watched",
-    rating: 8
+    rating: 8.5
   },
   {
-    title: "రావణసుర",
-    imageUrl: "/placeholder.svg?height=400&width=300",
+    title: "Billion Dollar Code",
+    imageUrl: "/bil.png",
     status: "Watched",
-    rating: 8
+    rating: 8.7
   },
   {
-    title: "3 Body Problem",
-    imageUrl: "/placeholder.svg?height=400&width=300",
+    title: "Lucky Bhaskar",
+    imageUrl: "/luck.png",
     status: "Watched",
-    rating: 8
+    rating: 8.2
+  },
+  {
+    title: "Hunter X Hunter",
+    imageUrl: "/hunter.png",
+    status: "Watched",
+    rating: 9.1
+  },
+  {
+    title: "Hunger Games",
+    imageUrl: "/hunger.png",
+    status: "Watched",
+    rating: 8.6
+  },
+  {
+    title: "Stranger Things",
+    imageUrl: "/stranger.png",
+    status: "Watched",
+    rating: 9.0
   }
 ]
 
