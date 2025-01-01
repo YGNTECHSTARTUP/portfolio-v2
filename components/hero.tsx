@@ -22,7 +22,7 @@ export function Hero() {
              Solo Developer Kinda Student 🦀
             </p>
             <p className="max-w-xl text-muted-foreground">
-              Learning about Real Time Data Distribution and trying to Grind Advent Of Code
+              Learning about Real Time Data Distribution and trying to Grind DSA
             </p>
           </div>
           <div
