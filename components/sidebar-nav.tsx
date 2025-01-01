@@ -9,7 +9,6 @@ import { motion } from "framer-motion"
 import { useTheme } from "next-themes"
 import { Wrench } from "lucide-react"
 import { FileUser } from "lucide-react"
-import { NotebookPen } from "lucide-react"
 import { SquarePen } from "lucide-react"
 export const navItems = [
   { icon: Home, href: "/", label: "Home" },
@@ -18,8 +17,7 @@ export const navItems = [
   { icon: Code2, href: "/projects", label: "Projects" },
   { icon: Wrench, href: "/utilities", label: "Utilites" },
   { icon: Headphones, href: "/music", label: "Music" },
-  {icon:FileUser, href:"/experience", label:"Experience" },
-  {icon:NotebookPen, href:"/GuestBook", label:"GuestBook" },
+  {icon:FileUser, href:"https://read.cv/ygn", label:"Experience" },
   {icon:SquarePen, href:"/Blogs", label:"Blog" }
 
 ]
