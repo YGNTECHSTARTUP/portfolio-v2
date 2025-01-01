@@ -34,7 +34,7 @@ export function Hero() {
                 alt="Profile"
                 width={320}
                 height={320}
-                className="object-cover w-full h-full lg:dark:grayscale lg:dark:hover:grayscale-0"
+                className="object-cover w-full h-full "
               />
             </div>
           </div>

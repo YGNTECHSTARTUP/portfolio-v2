@@ -16,7 +16,7 @@ export function VerseOnMind() {
           <BookOpen className="h-5 w-5 text-primary" />
           <h2 className="text-2xl font-semibold">Verse on my mind</h2>
         </div>
-        <blockquote className=" border-l-4 border-primary pl-4 italic">
+        <blockquote className="border-l-4 border-primary pl-4 italic">
         <p className="text-lg mb-2">
       &quot;You will be blessed when you come in and blessed when you go out. <br />
       The Lord will grant that the enemies who rise up against you will be defeated before you. <br />
