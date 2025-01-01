@@ -46,7 +46,6 @@ export function ProjectCard({
           <Image
             src={image}
             alt={title}
-            fill
             className="object-cover transition-transform duration-300 hover:scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent" />

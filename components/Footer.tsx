@@ -5,12 +5,12 @@ import { motion } from 'framer-motion'
 import { Github, Twitter, Linkedin, MessageSquare, Mail, FileText } from 'lucide-react'
 
 const socialLinks = [
-  { icon: Github, href: 'https://github.com/asrvd', label: 'GitHub' },
-  { icon: Twitter, href: 'https://twitter.com/_asheeshh', label: 'X (Twitter)' },
-  { icon: Linkedin, href: 'https://linkedin.com/in/asrvd', label: 'LinkedIn' },
-  { icon: MessageSquare, href: 'https://discord.com/users/asheeshh', label: 'Discord' },
-  { icon: Mail, href: 'mailto:ashirvadbhushan@gmail.com', label: 'Email' },
-  { icon: FileText, href: 'https://read.cv/asrvd', label: 'CV' },
+  { icon: Github, href: 'https://github.com/YGNTECHSTARTUP', label: 'GitHub' },
+  { icon: Twitter, href: 'https://twitter.com/ygntech', label: 'X (Twitter)' },
+  { icon: Linkedin, href: 'https://linkedin.com/in/ygntech', label: 'LinkedIn' },
+  { icon: MessageSquare, href: 'https://discord.com/users/ygntechstartup', label: 'Discord' },
+  { icon: Mail, href: 'mailto:ygntechstartup@gmail.com', label: 'Email' },
+  { icon: FileText, href: 'https://read.cv/ygn', label: 'CV' },
 ]
 
 const container = {

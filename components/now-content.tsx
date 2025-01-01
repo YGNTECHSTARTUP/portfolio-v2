@@ -4,6 +4,8 @@ import { motion } from "framer-motion"
 import { Card } from "@/components/ui/card"
 import { LastUpdated } from "@/components/last-updated"
 import Link from "next/link"
+import { VerseOnMind } from "./verse-on-mind"
+import { SongOnMind } from "./song-on-mind"
 
 const container = {
   hidden: { opacity: 0 },
@@ -104,6 +106,17 @@ export function NowContent() {
           <LastUpdated date="30 December, 2024" />
         </motion.div>
 </motion.div>
+<motion.div variants={item}>
+        <VerseOnMind />
+      </motion.div>
+
+      <motion.div variants={item}>
+        <SongOnMind />
+      </motion.div>
+
+      <motion.div variants={item}>
+        <LastUpdated date="01 Jan, 2025" />
+      </motion.div>
 
 
     </motion.div>

@@ -28,13 +28,13 @@ export function Hero() {
           <div
             className="relative"
           >
-            <div className="w-32 h-32 md:w-48 md:h-48 rounded-full overflow-hidden">
+            <div className="w-64 h-64 md:w-80 md:h-80 overflow-hidden rounded-2xl shadow-lg">
               <Image
                 src="/pic.png"
                 alt="Profile"
-                width={192}
-                height={192}
-                className="object-cover lg:dark:grayscale lg:dark:hover:grayscale-0"
+                width={320}
+                height={320}
+                className="object-cover w-full h-full lg:dark:grayscale lg:dark:hover:grayscale-0"
               />
             </div>
           </div>
