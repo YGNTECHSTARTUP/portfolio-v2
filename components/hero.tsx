@@ -1,8 +1,7 @@
-"use client"
 
-import { motion } from "framer-motion"
-import Image from "next/image"
+import Image from "next/legacy/image"
 import { Spotlight } from "./ui/spotlight"
+import { Container } from "./ui/container"
 
 export function Hero() {
   return (
@@ -12,14 +11,10 @@ export function Hero() {
         className="-top-40 right-0 absolute md:left-48 md:-top-20"
         fill="orange"
       />
-      
-        <div className="flex flex-col md:flex-row items-center justify-between py-20 gap-10 ">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="space-y-4"
-          >
+      <Container>
+          
+      <div className="flex flex-col md:flex-row items-center justify-between py-20 gap-10 ">
+          <div className="space-y-4">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
               Gagan Yarramsetty
             </h1>
@@ -29,11 +24,8 @@ export function Hero() {
             <p className="max-w-xl text-muted-foreground">
               Learning about Real Time Data Distribution and trying to Grind Advent Of Code
             </p>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
+          </div>
+          <div
             className="relative"
           >
             <div className="w-32 h-32 md:w-48 md:h-48 rounded-full overflow-hidden">
@@ -45,8 +37,10 @@ export function Hero() {
                 className="object-cover lg:dark:grayscale lg:dark:hover:grayscale-0"
               />
             </div>
-          </motion.div>
+          </div>
         </div>
+      </Container>
+    
     </div>
   )
 }

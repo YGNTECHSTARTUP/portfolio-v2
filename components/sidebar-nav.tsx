@@ -3,18 +3,25 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
-import { Home, User, Clock, Code2, Layout, Headphones, Moon, Sun } from 'lucide-react'
+import { Home, User, Clock, Code2,  Headphones, Moon, Sun, } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 import { useTheme } from "next-themes"
-
+import { Wrench } from "lucide-react"
+import { FileUser } from "lucide-react"
+import { NotebookPen } from "lucide-react"
+import { SquarePen } from "lucide-react"
 export const navItems = [
   { icon: Home, href: "/", label: "Home" },
   { icon: User, href: "/about", label: "About" },
   { icon: Clock, href: "/now", label: "Now" },
   { icon: Code2, href: "/projects", label: "Projects" },
-  { icon: Layout, href: "/dashboard", label: "Dashboard" },
+  { icon: Wrench, href: "/utilities", label: "Utilites" },
   { icon: Headphones, href: "/music", label: "Music" },
+  {icon:FileUser, href:"/experience", label:"Experience" },
+  {icon:NotebookPen, href:"/GuestBook", label:"GuestBook" },
+  {icon:SquarePen, href:"/Blogs", label:"Blog" }
+
 ]
 
 export function SidebarNav() {

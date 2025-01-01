@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { Card } from "@/components/ui/card"
 import { LastUpdated } from "@/components/last-updated"
+import Link from "next/link"
 
 const container = {
   hidden: { opacity: 0 },
@@ -34,15 +35,14 @@ export function NowContent() {
         <Card className="p-6">
         <div className="prose prose-gray dark:prose-invert max-w-none">
   <p className=" ">
-    Sigh. Another year is coming to an end—just two more days left. 😔 It feels like I was writing my last 
-    <span className="font-semibold">&quot;Now&quot;</span> page only yesterday. 2024 has been an incredibly 
+    Sigh. Another year is coming to an end—just one more days left. 😔 . 2024 has been an incredibly 
     <span className="font-semibold">intense year</span>—a year of drastic change, loss, and transformation. 💔✨
   </p>
   <p>
     From <span className="font-semibold">December 2023 to December 2024</span>, I went through moments that reshaped my life in ways I never anticipated. 
     I lost many things—both <span className="font-semibold">personally</span> and <span className="font-semibold">professionally</span>. 
     I lost people who were close to me, and in the process, <span className="font-semibold">I changed</span>—everything about me did. 
-    The way I look, the way I think, the way I approach life—none of it is the same anymore. 🔄
+    The way I look, the way I think, the way I approach life—none of it is the same anymore. 🔄 btw its not same anymore. i am Getting revived and i am not alone anymore this time.
   </p>
   <p>
     This year will forever remain <span className="font-semibold">unforgettable</span> for me, not because of accomplishments, 
@@ -52,8 +52,12 @@ export function NowContent() {
     <span className="font-semibold">didn&apos;t really matter much</span> to me.
   </p>
   <p>
-    I also wasn&apos;t coding as <span className="font-semibold">consistently</span> as I wanted to. 💻 You can even see that reflected in my 
-    <a href="#" className="text-blue-500 underline">GitHub contributions</a> this year—it&apos;s a reminder of the <span className="font-semibold">highs</span> and 
+    I also wasn&apos;t coding as <span className="font-semibold">consistently</span> as I wanted to. 💻 You can even see that reflected in my &nbsp;
+    <Link target="_blank" href={
+      "https://github.com/YGNTECHSTARTUP"
+    } className="underline d hover:transition-all hover:ease-in-out hover:no-underline decoration-wavy hover:text-yellow-700 dark:hover:text-yellow-500    decoration-yellow-600 decoration-2 decoration-none ">
+    Github Contributions &nbsp;
+    </Link>this year—it&apos;s a reminder of the <span className="font-semibold">highs</span> and 
     <span className="font-semibold">lows</span> I&apos;ve been through. 📉📈
   </p>
   <p>
@@ -72,7 +76,7 @@ export function NowContent() {
 
         </Card>
         <motion.div variants={item} className="mt-2">
-          <LastUpdated date="29 December, 2024" />
+          <LastUpdated date="30 December, 2024" />
         </motion.div>
       </motion.div>
       <h1 className="text-2xl lg:text-4xl font-semibold">Academic</h1>
@@ -97,7 +101,7 @@ export function NowContent() {
   </div>
 </Card>
 <motion.div variants={item} className="mt-2" >
-          <LastUpdated date="29 December, 2024" />
+          <LastUpdated date="30 December, 2024" />
         </motion.div>
 </motion.div>
 

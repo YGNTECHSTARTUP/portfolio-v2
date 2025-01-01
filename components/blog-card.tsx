@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import { Heart } from 'lucide-react'
 import { Card } from "./ui/card"
 import { Dialog, DialogContent, DialogTrigger } from "@radix-ui/react-dialog"
-import Image from "next/image"
+import Image from "next/legacy/image"
 interface BlogCardProps {
   title: string
   likes: number

@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import Image from "next/image"
+import Image from "next/legacy/image"
 import Link from "next/link"
 import { format } from "date-fns"
 import { Card } from "@/components/ui/card"

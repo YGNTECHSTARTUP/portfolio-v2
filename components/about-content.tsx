@@ -55,7 +55,7 @@ export function AboutContent() {
               Then, I took a creative detour into <span className="font-medium">game development</span>—or, more accurately,
               <span className="font-medium"> game design</span>—because I actually designed a game using the
               <span className="font-medium"> CORE game engine</span>! You can even check out a <Link href={"https://youtu.be/Sh2UfNZtg78"} target="_blank">
-              <span className="underline decoration-wavy hover:transition-all hover:ease-in-out hover:no-underline decoration-wavy hover:text-yellow-700 dark:hover:text-yellow-500    decoration-yellow-600 decoration-2 decoration-none ">
+              <span className="underline d hover:transition-all hover:ease-in-out hover:no-underline decoration-wavy hover:text-yellow-700 dark:hover:text-yellow-500    decoration-yellow-600 decoration-2 decoration-none ">
               video
                 </span>
               </Link> of it on YouTube. 🎮✨

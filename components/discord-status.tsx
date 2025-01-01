@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Card } from "@/components/ui/card"
-import Image from "next/image"
+import Image from "next/legacy/image"
 
 interface DiscordStatusProps {
   status: "online" | "offline" | "idle" | "dnd"

@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import Image from "next/image"
+import Image from "next/legacy/image"
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Star } from 'lucide-react'
@@ -111,7 +111,6 @@ export function MovieList() {
                 <Image
                   src={movie.imageUrl}
                   alt={movie.title}
-                  fill
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
