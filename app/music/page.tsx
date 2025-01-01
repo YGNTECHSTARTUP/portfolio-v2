@@ -11,6 +11,7 @@ const pageVariants = {
 }
 
 export default function MusicPage() {
+
   return (
     <div className="min-h-screen bg-background">
       <motion.main

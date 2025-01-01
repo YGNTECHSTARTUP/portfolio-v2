@@ -24,8 +24,8 @@ export function Hero() {
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
               Gagan Yarramsetty
             </h1>
-            <p className="text-xl text-muted-foreground">
-              Solo Rustacean 🦀
+            <p className="text-xl flex text-muted-foreground">
+             Solo Developer Kinda Student 🦀
             </p>
             <p className="max-w-xl text-muted-foreground">
               Learning about Real Time Data Distribution and trying to Grind Advent Of Code

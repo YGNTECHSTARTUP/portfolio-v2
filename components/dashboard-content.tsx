@@ -20,18 +20,24 @@ const item = {
 
 export function DashboardContent() {
   const softwareItems = [
-    { name: "Helix", description: "A post-modern text editor", icon: "edit" },
-    { name: "Zen", description: "A next-gen browser", icon: "globe" },
-    { name: "Notion", description: "A note-taking app", icon: "notebook" },
-    { name: "Windows", description: "Operating System", icon: "monitor" },
-    { name: "Pot Player", description: "For media streaming", icon: "play" },
-    { name: "Fliqlo", description: "For screen saver", icon: "clock" },
+    { name: "Helix", description: "A post-modern text editor", url: "/helix.png" },
+    { name: "Zen", description: "A next-gen browser", url: "/zen.png" },
+    { name: "Notion", description: "A note-taking app", url: "/notion.png" },
+    { name: "Windows", description: "Operating System", url: "/win.png" },
+    { name: "Pot Player", description: "For media streaming", url: "/pot.png" },
+    { name: "Fliqlo", description: "For screen saver", url: "/fliqlo.png" },
+    { name: "Excalidraw", description: "For Doodle", url: "/excalidraw.png" },
+    {name:"ChatGPT",description:"GPT",url:"/gpt.png" },
+    {name:"MonkeyTyping",description:"Typing",url:"/mon.png" },
   ]
 
   const hardwareItems = [
     { name: "Acer Aspire Swift Go 14", description: "Laptop", icon: "laptop" },
     { name: "Sleepaxa Advance Amber tint Glasses", description: "Eye protection", icon: "eye" },
     { name: "Red Gear Headphones", description: "Audio", icon: "headphones" },
+    {name:"tukzer",description:"Stylus",icon:"pen"},
+    {name:"Lenovo Gaming Mouse",description:"Mouse",icon:"mouse"},
+    {name:"Amazon Basics Cooling Pad",description:"Cooling pad",icon:"laptops"},
   ]
 
   return (
