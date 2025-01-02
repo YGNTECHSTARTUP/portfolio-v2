@@ -37,7 +37,7 @@ export function NowContent() {
         <Card className="p-6">
         <div className="prose prose-gray dark:prose-invert max-w-none">
   <p className=" ">
-    Sigh. Another year is coming to an end—just one more days left. 😔 . 2024 has been an incredibly 
+    Sigh. Another year is coming to an end—just one more day left. 😔 . 2024 has been an incredibly 
     <span className="font-semibold">intense year</span>—a year of drastic change, loss, and transformation. 💔✨
   </p>
   <p>

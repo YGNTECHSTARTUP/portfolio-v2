@@ -6,63 +6,40 @@ import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Star } from 'lucide-react'
 
-interface Movie {
+interface Books {
   title: string
   imageUrl: string
-  status: "Watching" | "Watched"
+  status: "Completed" | "Reading"
   rating: number | null
 }
 
-const movies: Movie[] = [
+const Books: Books[] = [
  
-  {
-    title: "Solo Leveling Season 2",
-    imageUrl: "/solo.png",
-    status: "Watching",
-    rating: null
-  },
-  {
-    title: "Silicon Valley",
-    imageUrl: "/sil.png",
-    status: "Watching",
-    rating: null
-  },
-  {
-    title: "Social Network",
-    imageUrl: "/social.png",
-    status: "Watched",
-    rating: 9.5
-  },
-  {
-    title: "Billion Dollar Code",
-    imageUrl: "/bil.png",
-    status: "Watched",
-    rating: 9.2
-  },
-  {
-    title: "Lucky Bhaskar",
-    imageUrl: "/luck.png",
-    status: "Watched",
-    rating: 9.0
-  },
-  {
-    title: "Hunter X Hunter",
-    imageUrl: "/hunter.png",
-    status: "Watched",
-    rating: 9.4
-  },
-  {
-    title: "Hunger Games",
-    imageUrl: "/hunger.png",
-    status: "Watched",
-    rating: 8.6
-  },
-  {
-    title: "Stranger Things",
-    imageUrl: "/stranger.png",
-    status: "Watched",
-    rating: 9.0
-  }
+    {
+        title: "Rich Dad Poor Dad",
+        imageUrl: "/rich.png",
+        status: "Completed",
+        rating: 8.5
+      },
+    
+      {
+        title: "The Alchemist",
+        imageUrl: "/alch.png",
+        status: "Completed",
+        rating: 9.0
+      },
+      {
+        title: "Dhruva 2500 AD",
+        imageUrl: "/dhruva.png",
+        status: "Completed",
+        rating: 9.7
+      },
+      {
+        title: "Think And Grow Rich",
+        imageUrl: "/think.png",
+        status: "Reading",
+        rating: null
+      }
 ]
 
 const container = {
@@ -80,7 +57,7 @@ const item = {
   show: { opacity: 1, y: 0 }
 }
 
-export function MovieList() {
+export function BookList() {
   return (
     <motion.div
       variants={container}
@@ -93,13 +70,13 @@ export function MovieList() {
         className="text-2xl font-semibold"
       >
         Recent watched Movies & TV Series
-      </motion.h2>
+        </motion.h2>
       
       <motion.div 
         variants={item}
         className="flex gap-6 overflow-x-auto pb-4 -mx-4 px-4 scrollbar-thin scrollbar-thumb-primary/10 scrollbar-track-transparent"
       >
-        {movies.map((movie) => (
+        {Books.map((movie) => (
           <motion.div
             key={movie.title}
             variants={item}
@@ -117,7 +94,7 @@ export function MovieList() {
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
                 <div className="absolute bottom-2 left-2">
                   <Badge 
-                    variant={movie.status === "Watching" ? "default" : "secondary"}
+                    variant={movie.status === "Reading" ? "default" : "secondary"}
                     className="text-xs"
                   >
                     {movie.status}

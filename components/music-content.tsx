@@ -6,6 +6,7 @@ import { Music2, Disc3, Languages,  } from 'lucide-react'
 import { AudioQualityCard } from "@/components/audio-quality-card"
 import { ArtistImage } from "@/components/artist-image"
 import { MovieList } from "./Movielist"
+import { BookList } from "./Booklist"
 
 const container = {
   hidden: { opacity: 0 },
@@ -119,6 +120,9 @@ export function MusicContent() {
       </motion.div>
       <motion.div variants={item}>
         <MovieList />
+      </motion.div>
+      <motion.div variants={item}>
+<BookList/>
       </motion.div>
     </motion.div>
   )
