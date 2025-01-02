@@ -2,6 +2,8 @@
 import Image from "next/legacy/image"
 import { Spotlight } from "./ui/spotlight"
 import { Container } from "./ui/container"
+import { Button } from "./ui/button"
+import Link from "next/link"
 
 export function Hero() {
   return (
@@ -24,6 +26,15 @@ export function Hero() {
             <p className="max-w-xl text-muted-foreground">
               Learning about Real Time Data Distribution and Trying to Grind DSA
             </p>
+            <div className="space-x-5">
+            <Link href={'/Resume.pdf'} target='_blank'>
+            <Button variant='outline' className='hover:text-yellow-500 dark:hover:text-yellow-400'>Check out my resume!</Button>
+            </Link>
+            <Link href={'mailto:gagannaidu2006@gmail.com'}>
+            <Button variant='outline' className='hover:text-yellow-800 dark:hover:text-yellow-400'>Hire Me!</Button>            
+            </Link>
+            </div>
+         
           </div>
           <div
             className="relative"

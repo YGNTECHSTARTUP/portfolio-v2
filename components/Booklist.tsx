@@ -14,7 +14,18 @@ interface Books {
 }
 
 const Books: Books[] = [
- 
+  {
+    title: "Think And Grow Rich",
+    imageUrl: "/think.png",
+    status: "Reading",
+    rating: null
+  },
+  {
+    title: "Dhruva 2500 AD",
+    imageUrl: "/dhruva.png",
+    status: "Completed",
+    rating: 9.7
+  },
     {
         title: "Rich Dad Poor Dad",
         imageUrl: "/rich.png",
@@ -28,18 +39,6 @@ const Books: Books[] = [
         status: "Completed",
         rating: 9.0
       },
-      {
-        title: "Dhruva 2500 AD",
-        imageUrl: "/dhruva.png",
-        status: "Completed",
-        rating: 9.7
-      },
-      {
-        title: "Think And Grow Rich",
-        imageUrl: "/think.png",
-        status: "Reading",
-        rating: null
-      }
 ]
 
 const container = {
