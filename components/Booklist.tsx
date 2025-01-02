@@ -68,7 +68,7 @@ export function BookList() {
         variants={item}
         className="text-2xl font-semibold"
       >
-        Recent watched Movies & TV Series
+        Recent Books and Audio Series
         </motion.h2>
       
       <motion.div 
