@@ -9,7 +9,7 @@ export default function ProjectsPage() {
     <div className="min-h-screen bg-background">
       <SidebarNav />
       <main
-        className="p-3  md:pl-16 lg:pl-0"
+        className="p-3  md:pl-16 "
         
       >
         <div className="relative">
