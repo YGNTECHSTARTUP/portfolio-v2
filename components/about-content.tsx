@@ -62,7 +62,7 @@ export function AboutContent() {
             </p>
             <p>
               After that, I ventured into the vast world of <span className="font-medium">web development</span>, diving into all things frontend, backend, and beyond.
-              But, as they say, the journey never stops. Now, I&apos;ve found myself deep in the <span className="font-medium">Rust world</span>,
+              But, as they say, the journey never stops. And Then for some period of time I get to know about the Content Creation particularly Video Editing. Now, I&apos;ve found myself deep in the <span className="font-medium">Rust world</span>,
               where I&apos;m focusing on building cutting-edge solutions for <span className="font-medium">real-time data distribution</span>. 🦀🚀
             </p>
           </div>
