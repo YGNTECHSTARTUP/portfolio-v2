@@ -100,7 +100,17 @@ export function NowContent() {
     See, I was also doing an <span className="font-semibold">internship</span>, and juggling both was straight-up chaos. 💀  
     To make it work, I made the ultimate sacrifice—<span className="font-semibold">my sleep</span>. 🛌❌  
   </p>
+
   <p>
+    But after writing my <span className="font-semibold">first exam</span>, something hit me. 🤯  
+    I felt this deep sadness, this crushing doubt—like, <span className="italic">what if I’m just not good enough?</span> 😞  
+    The stress, the exhaustion, the constant switching between work and studies… it all got to me.  
+    And at that moment, I had a realization: <span className="font-semibold">The semester isn’t everything.</span> 🤷‍♂️  
+  </p>
+  <p>
+    So, I took a step back. Instead of forcing an impossible study schedule,  
+    I started preparing <span className="font-semibold">just the day before</span> each exam. 🥲  Where my schedule look like
+    <p>
     My schedule? A masterpiece of madness:  
     <ul className="">
       <li>☀️ <span className="font-semibold">Morning</span>: Internship work, fixing bugs, handling tasks. 👨‍💻🐛</li>
@@ -116,15 +126,6 @@ export function NowContent() {
     cramming last-minute topics and solving <span className="font-semibold">PYQs</span> like my life depended on it.  
     By some miracle, I finished the last lesson just in time. 🎯  
   </p>
-  <p>
-    But after writing my <span className="font-semibold">first exam</span>, something hit me. 🤯  
-    I felt this deep sadness, this crushing doubt—like, <span className="italic">what if I’m just not good enough?</span> 😞  
-    The stress, the exhaustion, the constant switching between work and studies… it all got to me.  
-    And at that moment, I had a realization: <span className="font-semibold">The semester isn’t everything.</span> 🤷‍♂️  
-  </p>
-  <p>
-    So, I took a step back. Instead of forcing an impossible study schedule,  
-    I started preparing <span className="font-semibold">just the day before</span> each exam. 🥲  
     The funny thing? It actually worked! 😂 By the grace of the exam gods,  
     things lined up perfectly, and I managed to write my papers well.  
   </p>
