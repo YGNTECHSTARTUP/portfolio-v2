@@ -18,13 +18,11 @@ export function VerseOnMind() {
         </div>
         <blockquote className="border-l-4 border-primary pl-4 italic">
         <p className="text-lg mb-2">
-      &quot;You will be blessed when you come in and blessed when you go out. <br />
-      The Lord will grant that the enemies who rise up against you will be defeated before you. <br />
-      They will come at you from one direction but flee from you in seven.&quot;
+      &quot;When they cast you down, and you say, ‘Exaltation will come!’ Then He will save the humble person&quot;
     </p>
   </blockquote>
   <p className="text-right text-sm text-muted-foreground mt-2">
-    - Deuteronomy 28:6-7
+    - Job 22:29 
   </p>
       </Card>
     </motion.div>

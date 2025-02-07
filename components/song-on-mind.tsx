@@ -20,15 +20,15 @@ export function SongOnMind() {
         <div className="flex items-center gap-4">
           <div className="relative w-20 h-20 rounded-md overflow-hidden">
             <Image
-              src="/favsong.png"
+              src="/favsongs.jpg"
               alt="Album cover"
               layout="fill"
               objectFit="cover"
             />
           </div>
           <div>
-            <h3 className="text-lg font-medium">Ocean</h3>
-            <p className="text-muted-foreground">Anuv Jain</p>
+            <h3 className="text-lg font-medium">Hold On</h3>
+            <p className="text-muted-foreground">Chord Overstreet</p>
             <p className="text-sm text-muted-foreground mt-1">
             
             </p>

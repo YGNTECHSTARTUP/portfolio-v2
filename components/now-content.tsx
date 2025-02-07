@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client"
 
 import { motion } from "framer-motion"
@@ -36,74 +37,111 @@ export function NowContent() {
       <motion.div variants={item}>
         <Card className="p-6">
         <div className="prose prose-gray dark:prose-invert max-w-none">
-  <p className=" ">
-    Sigh. Another year is coming to an end—just one more day left. 😔 . 2024 has been an incredibly 
-    <span className="font-semibold">intense year</span>—a year of drastic change, loss, and transformation. 💔✨
+  <p>
+    Aaagh! The first month of <span className="font-semibold">2025</span> has been a ride. 🚀  
+    So many <span className="font-semibold">opportunities</span>, so many lessons—but if I had to pick one,  
+    it’s how to <span className="font-semibold">stay confident</span> in myself, no matter what.  
   </p>
   <p>
-    From <span className="font-semibold">December 2023 to December 2024</span>, I went through moments that reshaped my life in ways I never anticipated. 
-    I lost many things—both <span className="font-semibold">personally</span> and <span className="font-semibold">professionally</span>. 
-    I lost people who were close to me, and in the process, <span className="font-semibold">I changed</span>—everything about me did. 
-    The way I look, the way I think, the way I approach life—none of it is the same anymore. 🔄 btw its not same anymore. i am Getting revived and i am not alone anymore this time.
+    It started with a <span className="font-semibold">failed interview</span> in the first week. 😞  
+    Not because I lacked <span className="font-semibold">tech skills</span>, but because my problem-solving wasn’t up to the mark.  
+    That stung. I felt embarrassed—like having all the right tools but not knowing how to use them. 🔧🧠  
   </p>
   <p>
-    This year will forever remain <span className="font-semibold">unforgettable</span> for me, not because of accomplishments, 
-    but because of the <span className="font-semibold">sheer intensity</span> it brought into my life. ⚡ There were things I couldn&apos;t achieve 
-    and plans that didn&apos;t work out as I had hoped. And if I&apos;m being honest, I spent a lot of my time <span className="font-semibold">overthinking</span> 🤯, 
-    <span className="font-semibold">daydreaming</span> about the future ☁️, and researching things that, looking back, 
-    <span className="font-semibold">didn&apos;t really matter much</span> to me.
+    But instead of dwelling on it, I spent the first half of the month diving into <span className="font-semibold">new tech</span>,  
+    exploring <span className="font-semibold">project ideas</span>, and just researching everything I could. 🔍  
+    A deep dive into the unknown—equal parts exciting and overwhelming.  
   </p>
   <p>
-    I also wasn&apos;t coding as <span className="font-semibold">consistently</span> as I wanted to. 💻 You can even see that reflected in my &nbsp;
-    <Link target="_blank" href={
-      "https://github.com/YGNTECHSTARTUP"
-    } className="underline d hover:transition-all hover:ease-in-out hover:no-underline decoration-wavy hover:text-yellow-700 dark:hover:text-yellow-500    decoration-yellow-600 decoration-2 decoration-none ">
-    Github Contributions &nbsp;
-    </Link>this year—it&apos;s a reminder of the <span className="font-semibold">highs</span> and 
-    <span className="font-semibold">lows</span> I&apos;ve been through. 📉📈
+    Then, reality hit: <span className="font-semibold">my semester was coming up</span>. 📚  
+    I told myself, "Time to focus," but my mind had other plans.  
+    One moment, I’m studying. The next? I’m watching a random video on "How Does Microservice architecture was Deployed." 🌌🤦‍♂️  
   </p>
   <p>
-    As 2024 comes to a close, I&apos;m hoping to spend this final week being as <span className="font-semibold">productive</span> as possible 🛠️ and making time 
-    for the people who <span className="font-semibold">matter</span>—especially my family. ❤️
+    I tried pushing through, but then—plot twist—my university <span className="font-semibold">postponed the semester</span>. 😳  
+    Great news, right? Well… sort of. Instead of using the extra time wisely, I ended up postponing everything else too. 😂  
   </p>
-  <p className="italic">
-    That&apos;s it from me for now. I&apos;ll see you in the new year! 🌟 Wishing you a <span className="font-semibold">very Happy New Year</span> in advance if 
-    you&apos;re reading this before it, and a <span className="font-semibold">belated Happy New Year</span> if you&apos;re reading it after. 🎉🥳
+  <p>
+    Just when I thought I had a break, my <span className="font-semibold">internship</span> called. ☎️  
+    “Hey, we need you to work on a project. Urgently.”  
+    I thought, "Two days of work? No big deal." So, I got it done—<span className="font-semibold">90% finished</span>, submitted it,  
+    and told them, "Don't disturb me during my semester!" 😌  
   </p>
-  <p className="text-center font-semibold">
-    Take care, and goodbye for now. 👋
+  <p>
+    But guess what? The <span className="font-semibold">production launch</span> happened right in the middle of my exams. 😩  
+    Suddenly, I was juggling between fixing <span className="font-semibold">bugs</span>, taking unexpected <span className="font-semibold">calls</span>,  
+    and trying to focus on my studies. My brain was officially running on multiple threads. 🏃‍♂️💻📖  
+  </p>
+  <p>
+    It was a wild month—one where I learned a lot, struggled a bit, and somehow made it through.  
+    <span className="font-semibold">Lesson learned:</span> Life won’t always wait for the "perfect" time, so you just have to roll with it.  
+  </p>
+  <p>
+    <span className="font-semibold">And that’s how my January went.</span> Let’s see what February brings. 🤞  
   </p>
 </div>
 
 
+
         </Card>
         <motion.div variants={item} className="mt-2">
-          <LastUpdated date="30 December, 2024" />
+          <LastUpdated date="07 February, 2025" />
         </motion.div>
       </motion.div>
       <h1 className="text-2xl lg:text-4xl font-semibold">Academic</h1>
       <motion.div variants={item}>
       <Card className="p-6">
-  <div className="prose prose-gray dark:prose-invert max-w-none">
-    <p>
-      Man, I’ve been <span className="font-semibold">literally crying</span> over my academic performance lately. 😭💔 
-      I feel like I’m lagging so far behind that if procrastination were a sport, I’d win gold every semester. 🏅 
-      With exams just around the corner next month, you’d think I’d start preparing, but nope—motivation is currently on vacation. ✈️🌴
-    </p>
-    <p>
-      And don’t even get me started on college assignments. They keep piling up like a never-ending boss battle, and I, the so-called protagonist, 
-      keep postponing everything until the last possible moment. Then comes <span className="font-semibold">deadline day</span>, and suddenly I’m sprinting like I’m in a coding 
-      hackathon—but only to finish a single assignment. 🏃‍♂️📄 Needless to say, it’s exhausting.
-    </p>
-    <p>
-      To top it all off, opportunities are knocking at my door. 🚪✨ But instead of being excited, I’m standing there like: <span className="font-semibold">Do I accept this or run away screaming?</span> 
-      I really need to learn how to say <span className="font-semibold">NO</span> when I know I can’t take on more stuff. But saying no is harder than debugging a 
-      <code className="bg-gray-200 text-sm rounded px-1 py-0.5 dark:bg-gray-800 dark:text-gray-200">NullPointerException</code> while sleep-deprived. 😵‍💫
-    </p>
-  </div>
+      <div className="prose prose-gray dark:prose-invert max-w-none">
+  <p>
+    Man, I literally have no words right now. I’m on the verge of tears over my <span className="font-semibold">academic performance</span>. 😭  
+    This month was all about my <span className="font-semibold">semester exams</span>, which meant I had to focus on studying…  
+    but life had other plans.  
+  </p>
+  <p>
+    See, I was also doing an <span className="font-semibold">internship</span>, and juggling both was straight-up chaos. 💀  
+    To make it work, I made the ultimate sacrifice—<span className="font-semibold">my sleep</span>. 🛌❌  
+  </p>
+  <p>
+    My schedule? A masterpiece of madness:  
+    <ul className="">
+      <li>☀️ <span className="font-semibold">Morning</span>: Internship work, fixing bugs, handling tasks. 👨‍💻🐛</li>
+      <li>🌙 <span className="font-semibold">Afternoon</span>: Study time... or at least, that was the plan.  
+        But sometimes, urgent fixes dragged me back to work. 😵‍💫</li>
+      <li>🌌 <span className="font-semibold">Night</span>: PANIC MODE. 🚨 I’d barely covered two lessons,  
+        but I needed at least five to score decently. Time to <span className="font-semibold">activate the grind</span>. ⚡</li>
+    </ul>
+  </p>
+  <p>
+    From <span className="font-semibold">night till 2 AM</span>, I locked in—no distractions, no nonsense, just raw studying. 📚😤  
+    Then, with barely three hours of sleep, I was up again at <span className="font-semibold">5 AM</span>,  
+    cramming last-minute topics and solving <span className="font-semibold">PYQs</span> like my life depended on it.  
+    By some miracle, I finished the last lesson just in time. 🎯  
+  </p>
+  <p>
+    But after writing my <span className="font-semibold">first exam</span>, something hit me. 🤯  
+    I felt this deep sadness, this crushing doubt—like, <span className="italic">what if I’m just not good enough?</span> 😞  
+    The stress, the exhaustion, the constant switching between work and studies… it all got to me.  
+    And at that moment, I had a realization: <span className="font-semibold">The semester isn’t everything.</span> 🤷‍♂️  
+  </p>
+  <p>
+    So, I took a step back. Instead of forcing an impossible study schedule,  
+    I started preparing <span className="font-semibold">just the day before</span> each exam. 🥲  
+    The funny thing? It actually worked! 😂 By the grace of the exam gods,  
+    things lined up perfectly, and I managed to write my papers well.  
+  </p>
+  <p>
+    Now, there's just <span className="font-semibold">one last exam</span> left, and once that’s done,  
+    I’ll officially be done with my <span className="font-semibold">BTech 2nd-year, 1st semester</span>. 🎉  
+    Then, it’s back to my real plans—the ones that actually excite me. 🚀  
+  </p>
+  <p>
+    Just gotta survive this last exam. Wish me luck. 🤞😆  
+  </p>
+</div>
+
 </Card>
 <motion.div variants={item} className="mt-2" >
-          <LastUpdated date="30 December, 2024" />
+          <LastUpdated date="07 Feb, 2025" />
         </motion.div>
 </motion.div>
 <motion.div variants={item}>
@@ -115,7 +153,7 @@ export function NowContent() {
       </motion.div>
 
       <motion.div variants={item}>
-        <LastUpdated date="01 Jan, 2025" />
+        <LastUpdated date="07 Feb, 2025" />
       </motion.div>
 
 
