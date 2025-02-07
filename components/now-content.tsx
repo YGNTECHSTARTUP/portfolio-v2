@@ -4,7 +4,6 @@
 import { motion } from "framer-motion"
 import { Card } from "@/components/ui/card"
 import { LastUpdated } from "@/components/last-updated"
-import Link from "next/link"
 import { VerseOnMind } from "./verse-on-mind"
 import { SongOnMind } from "./song-on-mind"
 
