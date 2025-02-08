@@ -1,11 +1,7 @@
 export const getrepos = async () => {
     const GITHUB_API_URL = 'https://api.github.com/users/YGNTECHSTARTUP/repos';
   
-    const response = await fetch(GITHUB_API_URL, {
-      headers: {
-        Authorization: `Bearer ${process.env.GITHUB_TOKEN}`, 
-      },
-    });
+    const response = await fetch(GITHUB_API_URL);
   
     if (!response.ok) {
       console.error('Failed to fetch repositories');
@@ -29,6 +25,7 @@ export const getrepos = async () => {
       language:repo.language,
       topics:repo.topics,
     }));
+    console.log(projectData)
     return {
       props: {
         projects: projectData.slice(0, 6),
