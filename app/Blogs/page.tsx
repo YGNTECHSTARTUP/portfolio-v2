@@ -16,7 +16,7 @@ const blogPosts: BlogPost[] = [
 
 export default function BlogPage() {
   return (
-    <main className="max-w-3xl mx-auto px-4 py-8 md:py-12 p-3 md:pl-16  ">
+    <main className="max-w-3xl mx-auto px-4 py-8 md:py-12 p-3 md:pl-16 md:mb-[35%] ">
       <h1 className="text-4xl md:text-5xl font-serif mb-6 ">Blogs</h1>
       <p className="text-lg text-muted-foreground mb-8">
         Every week, I documente and articulate my acquired knowledge and personal perspectives on topics that captivate
