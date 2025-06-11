@@ -20,12 +20,12 @@ export function Hero() {
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
               Gagan Yarramsetty
             </h1>
-            <p className="text-xl flex text-muted-foreground">
-             Solo Developer Kinda Student 🦀
+            <p className="text-3xl flex text-muted-foreground">
+            System Designer 🧑‍💻 </p>
+            <p className="max-w-2xl text-xl text-muted-foreground">
+            Tinkering with Rust 🦀, Concurrency & Distributed Systems 🌐
             </p>
-            <p className="max-w-xl text-muted-foreground">
-              Learning about Real Time Data Distribution and Trying to Grind DSA
-            </p>
+            {/* </p> */}
             <div className="space-x-5">
             <Link href={'/Resume.pdf'} target='_blank'>
             <Button variant='outline' className='hover:text-yellow-500 dark:hover:text-yellow-400'>Check out my resume!</Button>
